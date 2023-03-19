@@ -25,20 +25,17 @@ class HomePage extends StatelessWidget {
   }
 
   Future<void> sendData() async {
-    // create a reference to the Firebase Realtime Database location
-    DatabaseReference geoPositionRef = FirebaseDatabase.instance
-        .ref()
-        .child('locations')
-        .push(); // generate a unique ID for the new data
-
-// create a Map object that contains the geo position data
-    Map<String, dynamic> geoPositionData = {
-      'onoma': '123',
-      'otinani': '800maou',
-    };
-
-// send the data to Firebase Realtime Database
-    await geoPositionRef.set(geoPositionData);
+    try {
+      final databaseReference = FirebaseDatabase.instance.ref();
+      final locationRef = databaseReference.child('locations').push();
+      await locationRef.set({
+        'latitude': 43.4567,
+        'longitude': -79.1234,
+      });
+      print("finished");
+    } catch (error) {
+      print("Error occurred while sending data: $error");
+    }
   }
 
   Widget _sendData() {
