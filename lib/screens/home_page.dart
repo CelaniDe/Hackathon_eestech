@@ -29,6 +29,7 @@ class HomePage extends StatelessWidget {
       final databaseReference = FirebaseDatabase.instance.ref();
       final locationRef = databaseReference.child('locations').push();
       await locationRef.set({
+        'user': user?.email,
         'latitude': 43.4567,
         'longitude': -79.1234,
       });

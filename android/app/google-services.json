@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1002206222994",
+    "firebase_url": "https://firstflutter-9b67d-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "firstflutter-9b67d",
     "storage_bucket": "firstflutter-9b67d.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "1002206222994-786pegl1tim8v929dvuggb7k9gojd0or.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1002206222994-9fl6p8gjbq32u3tu8j0kr5oi6r4tjb4i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.helloOk"
+              }
             }
           ]
         }
@@ -58,6 +66,13 @@
             {
               "client_id": "1002206222994-786pegl1tim8v929dvuggb7k9gojd0or.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1002206222994-9fl6p8gjbq32u3tu8j0kr5oi6r4tjb4i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.helloOk"
+              }
             }
           ]
         }
